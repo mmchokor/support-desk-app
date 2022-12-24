@@ -10,7 +10,7 @@ const myState = () => {
 
 }
 
-const API_URL = 'http://localhost:5000/api/users/'
+const API_URL = 'http://localhost:3000/api/users/'
 
 // Register user
 const register = async (usereData) => {
