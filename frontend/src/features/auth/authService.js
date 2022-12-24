@@ -1,6 +1,16 @@
-import axios from 'axios'
+import axios from 'axios';
+import { useState } from "react";
 
-const API_URL = '/api/users/'
+const myState = () => {
+   const [isLoading, setIsLoading] = useState("");
+
+   setIsLoading(true);
+
+   console.log(isLoading)
+
+}
+
+const API_URL = 'http://localhost:5000/api/users/'
 
 // Register user
 const register = async (usereData) => {
